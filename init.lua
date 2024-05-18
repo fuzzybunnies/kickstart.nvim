@@ -412,7 +412,14 @@ require('lazy').setup({
     'neovim/nvim-lspconfig',
     dependencies = {
       -- Automatically install LSPs and related tools to stdpath for Neovim
-      { 'williamboman/mason.nvim', config = true }, -- NOTE: Must be loaded before dependants
+      -- { 'williamboman/mason.nvim', config = true }, -- NOTE: Must be loaded before dependants
+      {
+        'williamboman/mason.nvim',
+        config = true,
+        opts = {
+          PATH = 'append',
+        },
+      }, -- NOTE: Must be loaded before dependants
       'williamboman/mason-lspconfig.nvim',
       'WhoIsSethDaniel/mason-tool-installer.nvim',
 
@@ -578,6 +585,9 @@ require('lazy').setup({
         -- tsserver = {},
         --
 
+        ruby_lsp = {
+          cmd = { 'ruby-lsp' },
+        },
         lua_ls = {
           -- cmd = {...},
           -- filetypes = { ...},
