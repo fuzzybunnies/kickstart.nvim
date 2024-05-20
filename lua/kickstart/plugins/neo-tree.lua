@@ -25,5 +25,15 @@ return {
         hide_gitignored = false,
       },
     },
+    window = {
+      mappings = {
+        ['m'] = {
+          'move',
+          config = {
+            show_path = 'absolute',
+          },
+        },
+      },
+    },
   },
 }
