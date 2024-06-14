@@ -1,0 +1,21 @@
+{
+	"Memoized Function": {
+		"prefix": ["defmemo"],
+		"body": [
+			"# comment",
+			"def ${1: function_name}",
+			"\t@$1 ||= $0",
+			"end"
+		],
+		"description": "Memoized function"
+	},
+	"RSpec Allow": {
+		"prefix": ["allow"],
+		"body": [
+			"allow(${1: object})",
+			"\t.to receive(:${2: message})",
+			"\t.and_return(${3: value})",
+			"$0"
+		]
+	}
+}
