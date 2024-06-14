@@ -65,8 +65,14 @@ require('nvim-tree').setup {
   },
 }
 
-vim.api.nvim_set_hl(0, 'NvimTreeGitFileDirtyHL', { fg = '#f9ff40', bold = true })
-vim.api.nvim_set_hl(0, 'NvimTreeGitFolderDirtyHL', { fg = '#f9ff40', bold = true })
+local dirty = '#0fd16d'
+local new = '#bad10f'
+local orange = '#0ff51e'
 
-vim.api.nvim_set_hl(0, 'NvimTreeGitFolderNewHL', { fg = '#ff9e64', bold = true })
-vim.api.nvim_set_hl(0, 'NvimTreeGitFileNewHL', { fg = '#ff9e64', bold = true })
+vim.api.nvim_set_hl(0, 'NvimTreeGitFolderDirtyHL', { fg = dirty, bold = true })
+vim.api.nvim_set_hl(0, 'NvimTreeGitFileDirtyHL', { fg = dirty, bold = true })
+vim.api.nvim_set_hl(0, 'NvimTreeGitDirtyIcon', { fg = dirty, bold = true })
+
+vim.api.nvim_set_hl(0, 'NvimTreeGitFolderNewHL', { fg = new, bold = true })
+vim.api.nvim_set_hl(0, 'NvimTreeGitFileNewHL', { fg = new, bold = true })
+vim.api.nvim_set_hl(0, 'NvimTreeGitNewIcon', { fg = new, bold = true })
