@@ -22,7 +22,7 @@ require('nvim-tree').setup {
     -- dynamic width
     width = {},
     float = {
-      enable = true,
+      enable = false,
     },
   },
   renderer = {
