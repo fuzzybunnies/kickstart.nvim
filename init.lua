@@ -815,25 +815,6 @@ require('lazy').setup({
       }
     end,
   },
-  {
-    'nvim-lualine/lualine.nvim',
-    config = function()
-      require('lualine').setup {
-        options = {
-          theme = 'powerline_dark',
-        },
-        sections = {
-          lualine_a = { 'mode' },
-          -- lualine_b = { 'branch', 'diff', 'diagnostics' },
-          lualine_b = { 'diff', 'diagnostics' },
-          lualine_c = { 'filename' },
-          lualine_x = { 'filetype' },
-          lualine_y = { 'progress' },
-          lualine_z = { 'location' },
-        },
-      }
-    end,
-  },
 
   -- The following two comments only work if you have downloaded the kickstart repo, not just copy pasted the
   -- init.lua. If you want these files, they are in the repository, so you can just download them and
