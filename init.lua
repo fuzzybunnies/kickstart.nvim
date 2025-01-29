@@ -770,9 +770,6 @@ require('lazy').setup({
     end,
   },
   {
-    'christoomey/vim-tmux-navigator',
-  },
-  {
     's1n7ax/nvim-window-picker',
     name = 'window-picker',
     event = 'VeryLazy',
